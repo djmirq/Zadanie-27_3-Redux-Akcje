@@ -17,32 +17,30 @@ function addComment(text) {
 }
 
 function editComment(id, text) {
-    return {
-        type: EDIT_COMMENT,
-        id,
-        text: text        
-    }
+	return {
+		type: EDIT_COMMENT,
+		id,
+		text
+	}
 }
 
 function removeComment(id) {
-    return {
-        type: REMOVE_COMMENT,
-        id        
-    }
+	return {
+		type: REMOVE_COMMENT,
+		id
+	}
 }
 
-function thumbUpComment(id, handup) {
-    return {
-        type: THUMB_UP_COMMENT,
-        id,
-        handup: handup++
-    }
+function thumbUpComment(id) {
+	return {
+		type: THUMB_UP_COMMENT,
+		id
+	}
 }
 
-function thumbDownComment(id, handdown) {
-    return {
-        type: THUMB_DOWN_COMMENT,
-        id,
-        handdown: handdown--
-    }
+function thumbDownComment(id) {
+	return {
+		type: THUMB_DOWN_COMMENT,
+		id
+	}
 }
